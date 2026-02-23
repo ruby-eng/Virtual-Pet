@@ -1,0 +1,23 @@
+body{
+font-family: Arial;
+text-align:center;
+background:#ffeef2;
+}
+
+.pet{
+font-size:120px;
+margin:30px;
+animation:bounce 1s infinite alternate;
+}
+
+@keyframes bounce{
+from{transform:translateY(0);}
+to{transform:translateY(-20px);}
+}
+
+button{
+padding:10px 20px;
+margin:10px;
+font-size:16px;
+cursor:pointer;
+}
