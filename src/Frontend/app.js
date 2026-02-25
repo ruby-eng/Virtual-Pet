@@ -24,4 +24,17 @@ await fetch("http://localhost:8080/sleep");
 update();
 }
 
-update();
+const petDisplay = document.querySelector(".pet");
+
+if(data.hunger > 70){
+    petDisplay.innerText = "😫";
+}
+else if(data.energy < 30){
+    petDisplay.innerText = "😴";
+}
+else if(data.happiness > 80){
+    petDisplay.innerText = "😄";
+}
+else{
+    petDisplay.innerText = "😺";
+}

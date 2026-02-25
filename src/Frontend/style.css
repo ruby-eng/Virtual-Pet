@@ -1,23 +1,31 @@
 body{
-font-family: Arial;
-text-align:center;
-background:#ffeef2;
+    font-family: 'Segoe UI', sans-serif;
+    text-align:center;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
 }
 
 .pet{
-font-size:120px;
-margin:30px;
-animation:bounce 1s infinite alternate;
+    font-size:120px;
+    margin:30px;
+    transition: transform 0.3s ease;
 }
 
-@keyframes bounce{
-from{transform:translateY(0);}
-to{transform:translateY(-20px);}
+.pet:hover{
+    transform: scale(1.1);
 }
 
 button{
-padding:10px 20px;
-margin:10px;
-font-size:16px;
-cursor:pointer;
+    padding:12px 25px;
+    margin:10px;
+    font-size:16px;
+    border:none;
+    border-radius:20px;
+    background:#fff;
+    cursor:pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    background:#ff9aa2;
+    color:white;
 }

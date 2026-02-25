@@ -10,10 +10,7 @@ public class MainServer {
 
         HttpServer server = HttpServer.create(new InetSocketAddress(8080), 0);
 
-        server.createContext("/pet", new PetHandler());
-        server.createContext("/feed", new PetHandler());
-        server.createContext("/play", new PetHandler());
-        server.createContext("/sleep", new PetHandler());
+        server.createContext("/", new PetHandler());
 
         server.setExecutor(null);
         server.start();
